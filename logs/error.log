@@ -1,0 +1,23 @@
+2020/03/23 22:09:12 [error] 21#0: *1 directory index of "/app/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:32768"
+2020/03/23 22:10:41 [error] 19#0: *1 directory index of "/app/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2020/03/23 22:11:17 [error] 19#0: *1 directory index of "/app/public/app/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET /app/ HTTP/1.1", host: "localhost"
+2020/03/23 22:12:38 [error] 19#0: *1 directory index of "/app/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2020/03/23 22:12:45 [error] 19#0: *1 directory index of "/app/public/app/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET /app/ HTTP/1.1", host: "localhost"
+2020/03/23 22:19:03 [error] 17#0: *11 directory index of "/app/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2020/03/23 22:20:09 [error] 14#0: *12 directory index of "/app/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "local.culqui.com"
+2020/03/23 22:20:11 [error] 14#0: *12 directory index of "/app/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "local.culqui.com"
+2020/03/23 23:57:39 [error] 20#0: *46 FastCGI sent in stderr: "PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 16
+PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 19
+PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 20
+PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 16
+PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 19
+PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 20
+PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 16
+PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 19
+PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 20
+PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 16
+PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 19
+PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 20
+PHP message: PHP Notice:  Trying to get property of non-object in /app/public/app/module/Application/view/application/product/index.phtml on line 16
+PHP message: PHP Notice:  Trying to get propert
+2020/03/23 23:58:51 [error] 21#0: *50 FastCGI sent in stderr: "PHP message: PHP Notice:  Array to string conversion in /app/public/app/module/Application/view/application/product/index.phtml on line 13" while reading response header from upstream, client: 172.20.0.1, server: localhost, request: "GET /application/product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "local.culqui.com"

@@ -1,0 +1,54 @@
+<!--<div>-->
+<!--    <button id="buyButton" type="button" class="btn btn-primary">Compra tu Combo</button>-->
+<!--</div>-->
+<!---->
+<!--<div>-->
+<!--    <img src="https://source.unsplash.com/random">-->
+<!--    <span>Combo 5 Web</span>-->
+<!--    <button id="buyButton" type="button" class="btn btn-primary">Comprar</button>-->
+<!--</div>-->
+<style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 40%;
+    }
+
+    .card-columns-fluid {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .card-body {
+        padding: 2px 16px;
+    }
+
+    .card-button {
+        text-align:center;
+        padding: 10px;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+</style>
+<div class="row-fluid ">
+    <?php foreach ( $this->products as $elements) : ?>
+        <div class="col-sm-4 ">
+            <div class="card-columns-fluid">
+                <div class="card  bg-light" style = "width: 22rem; " >
+                    <img class="card-img-top"  src=" <?php echo $elements['img']; ?> " alt="Card image cap" style="width:100%">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Product: <?php echo $elements['name'] ?></b></h5>
+                        <p class="card-text"><b>Price: <?php echo $elements['price'] ?></b></p>
+                    </div>
+                    <div class="card-button">
+                        <button id="buyButton" type="button" class="btn btn-primary" data-product="<?php echo $elements['name'] ?>" data-price="<?php echo $elements['price'] ?>">
+                            Comprar <?php echo $elements['name'] ?>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php endforeach; ?>
+</div>

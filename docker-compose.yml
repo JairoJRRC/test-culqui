@@ -1,0 +1,24 @@
+version: '2'
+services:
+  backend:
+    image: $IMAGE_DEV
+    environment:
+      VIRTUAL_HOST: 'local.culqui.com'
+      APPLICATION_ENV: 'local'
+      APP_ENV: 'local'
+    volumes:
+      - .:/app/
+      - ~/.ssh/:/root/.ssh/
+      - ./logs:/var/log/nginx
+    labels:
+      - lb.hook=true
+    ports:
+      - 80:80
+
+  composer:
+    image: neoauto_web
+    working_dir: /app
+    volumes:
+      - .:/app/
+      - ~/.ssh/:/root/.ssh/
+    command: composer update
